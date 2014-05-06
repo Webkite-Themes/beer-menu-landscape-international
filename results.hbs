@@ -1,0 +1,118 @@
+{{ log this}}
+<header class="webkite-results-header">
+  {{>sorts this.sort}}
+  {{>filters this.filters}}
+</header>
+
+{{#if items.length}}
+{{#each this.items}}
+<section class="webkite-result">
+	<div class="webkite-block sixty">
+	  <h2>
+			{{~#facet name="Brewery"}}
+				{{~#if filterable~}}
+					<a href="#" class="webkite-add-filter brewery"  data-facet="{{name}}" data-operator="is" data-value="{{displayValue}}">{{displayValue}}</a>
+				{{~else~}}
+					<span class="winery">{{displayValue}}</span>
+				{{~/if}}
+			{{~/facet}}
+	  	{{#facet name="Beer Name"}}<span class="beer-name">{{displayValue}}</span>{{/facet}}
+	  </h2>
+		<ul>
+			<li>
+				<span class="facet-values providence">
+				{{#facet name="City"}}<span class="city" href="#">{{displayValue}}</span>{{/facet}}
+				{{~#facet name="State"}}
+            {{~#if filterable~}}
+              <a href="#" class="webkite-add-filter state" data-facet="{{name}}" data-operator="is" data-value="{{displayValue}}">{{displayValue}}</a>
+            {{~else~}}
+              <span class="state">{{~displayValue}}</span>
+            {{~/if~}}          
+          {{~/facet}}
+					{{~#facet name="Country"}}
+	          {{~#if filterable~}}
+	            <a href="#" class="webkite-add-filter country" data-facet="{{name}}" data-operator="is" data-value="{{displayValue}}">{{displayValue}}</a>
+	          {{~else~}}
+	            <span class="country">{{~displayValue}}</span>
+	          {{~/if~}}          
+	        {{~/facet~}}
+				</span>
+			</li>
+			<li>
+				{{#facet name="Type"}}
+					{{#if filterable}}
+					<b class="inline-filter-button">
+					<a class="webkite-toggle" data-target=".{{../../id}}-{{name}}-menu">{{downcase name}}<i></i></a>
+					<ul class="{{../../id}}-{{name}}-menu inline-filter-menu webkite-hide webkite-menu">
+						{{#each filterableValues}}
+						<li><a href="#" class="webkite-add-filter webkite-toggle" data-target=".{{../../../id}}-{{../name}}-menu" data-facet="{{../name}}" data-operator="is" data-value="{{this}}">{{this}}</a></li>
+						{{/each}}
+					</ul>
+					</b>
+					{{else}}
+					<b>{{downcase name}}</b>
+					{{/if}}
+					{{#if filterable}}
+					<span class="facet-values">
+						{{#each values}}
+						<a href="#" class="webkite-add-filter" data-facet="{{../name}}" data-operator="is" data-value="{{this}}">{{this}}</a>{{#unless @last}}, <br>{{/unless}}
+						{{/each}}
+					</span>
+					{{else}}
+					<span class="facet-values">
+					{{displayValue}}
+					</span>
+					{{/if}}
+				{{/facet}}
+			</li>
+			<li>
+        {{#facet name="Availability"}}
+          {{#if filterable}}
+          <b class="inline-filter-button">
+          <a class="webkite-toggle" data-target=".{{../../id}}-{{name}}-menu">{{downcase name}}<i></i></a>
+          <ul class="{{../../id}}-{{name}}-menu inline-filter-menu webkite-hide webkite-menu">
+            {{#each filterableValues}}
+            <li><a href="#" class="webkite-add-filter webkite-toggle" data-target=".{{../../../id}}-{{../name}}-menu" data-facet="{{../name}}" data-operator="is" data-value="{{this}}">{{this}}</a></li>
+          {{/each}}
+          </ul>
+          </b>
+        {{else}}
+          <b>{{downcase name}}</b>
+        {{/if}}
+        {{#if filterable}}
+        <span class="facet-values">
+        {{#each values}}
+        <a href="#" class="webkite-add-filter" data-facet="{{../name}}" data-operator="is" data-value="{{this}}">{{this}}</a>{{#unless @last}}, <br>{{/unless}}
+        {{/each}}
+        </span>
+        {{else}}
+        <span class="facet-values">
+        {{displayValue}}
+        </span>
+        {{/if}}
+        {{/facet}}
+      </li>
+		</ul>
+	</div><!--webkite-block-sixty-->
+	<div class="webkite-block forty">
+		<ul class="beer-info">
+			{{#facet name="Price"}}<li class="beer-price">{{displayValue}}</li>{{/facet}}
+			{{#facet name="ABV"}}<li class="abv">{{displayValue}}<span class="abv-per"> ABV</span></li>{{/facet}}
+		</ul>	
+		{{#facet name="Image URL"}}<div class="image-wrapper"><img src="{{displayValue}}"/></div>{{/facet}}	
+	</div><!--webkite-block forty-->
+  <footer class="webkite-result-footer"></footer>
+</section>
+{{/each}}
+{{else}}
+<section class="webkite-no-results">
+  <h2>Sorry, no results</h2>
+  <p>There are no results to display based on the selected filters. Try removing a filter to see more results.</p>
+  <footer class="webkite-result-footer"></footer>
+</section>
+{{/if}}
+
+<footer class="webkite-results-footer">
+  <div class="webkite-branding-area"><a></a></div>
+  <div class="webkite-pagination-area">{{>paginator pagination}}</div>
+</footer>
