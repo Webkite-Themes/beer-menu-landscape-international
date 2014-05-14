@@ -529,10 +529,10 @@
   background-position: center center;
   background-size: cover;
   float: right;
-  padding-bottom: 24%;
-  width: 24%; }
+  padding-bottom: 27%;
+  width: 27%; }
 #webkite-results .image-wrapper + .beer-info {
-  width: 74%; }
+  width: 70%; }
 #webkite-results .providence {
   font-size: 0.875em;
   margin-bottom: 0.625em; }
@@ -681,6 +681,11 @@
   width: auto; }
 #webkite-results.xs .image-wrapper + .beer-info {
   width: auto; }
+#webkite-results.xs ul.beer-info .beer-price {
+  float: none;
+  display: inline-block;
+  text-align: left;
+  width: 100%; }
 #webkite-results.xs .image-wrapper {
   width: 100%;
   padding-bottom: 100%; }
@@ -722,6 +727,11 @@
   float: none; }
 #webkite-results.sm .image-wrapper + .beer-info {
   width: auto; }
+#webkite-results.sm ul.beer-info .beer-price {
+  float: none;
+  display: inline-block;
+  text-align: left;
+  width: 100%; }
 
 /***************************************  DISPLAY RULES */
 #webkite-results.xs .until-xs, #webkite-results.xs .until-sm, #webkite-results.xs .sm-only, #webkite-results.xs .md-only, #webkite-results.xs .lg-only {

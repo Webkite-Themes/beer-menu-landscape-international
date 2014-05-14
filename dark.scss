@@ -115,11 +115,11 @@ $colorVariant:dark;
 			background-position: center center;
 			background-size: cover;
 			float: right;
-			padding-bottom: 24%;
-    	width: 24%;
+			padding-bottom: 27%;
+    	width: 27%;
     	}
   .image-wrapper + .beer-info{
-	  width: 74%;
+	  width: 70%;
   	}
   .providence{
 	  font-size: .875em;
@@ -264,6 +264,12 @@ $colorVariant:dark;
   .image-wrapper + .beer-info{
 	  width: auto;
   	}
+  ul.beer-info .beer-price{
+		  float: none;
+		  display: inline-block;
+		  text-align: left;
+		  width: 100%;
+	  	}
   .image-wrapper{
 	  width: 100%;
 	  padding-bottom: 100%;
@@ -315,6 +321,12 @@ $colorVariant:dark;
   .image-wrapper + .beer-info{
 	  width: auto;
   	}
+  ul.beer-info .beer-price{
+		  float: none;
+		  display: inline-block;
+		  text-align: left;
+		  width: 100%;
+	  	}
     
   }//end sm
   
