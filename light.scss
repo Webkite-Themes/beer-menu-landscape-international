@@ -178,13 +178,13 @@ $colorVariant:light;
       display: inline-block;
       font: 700 .75em/1.3 "Open Sans";
       margin: 0;
-      padding: $mainGutter/4 $mainGutter/4;
+      padding: 0.3125em;
       height: 2em;
       i{
         background: url("angle-light.png") center center no-repeat;
         display: inline-block;
         height: 10px;
-        margin-left: $mainGutter/2;
+        margin-left: 0.625em;
         pointer-events: none;
         width: 10px;
         }
@@ -230,6 +230,8 @@ $colorVariant:light;
   
   .webkite-no-results{
     padding: $mainGutter 0;
+    margin-bottom: $mainGutter;
+    border-bottom:1px solid $lightestOpacity;
     h2{
       margin-bottom: $mainGutter;
       }
@@ -239,23 +241,9 @@ $colorVariant:light;
   
 /************************************** ELEMENT QUERIES */
 #webkite-results.xs{
-  .webkite-block, .webkite-title-area, .webkite-branding-area, .webkite-pagination-area{
+  .webkite-block{
     width: 100%;
     padding-right: 0;
-    }
-  .webkite-filter-area, .webkite-sort-area, .webkite-sort-area > .webkite-toggle{
-    width: 100%;
-    }
-  .webkite-sort-area > .webkite-toggle i{
-    float: right; margin-top: $mainGutter/4;
-    }
-  .sort-menu{width: 95%;}
-  .webkite-sort-area+.webkite-filter-area{
-    margin-top: $mainGutter;
-    }
-  .webkite-filter-area{
-    margin-left: 0;
-    padding-left: 0;
     }
   .webkite-block ul li{
     b, a, span{width: 100%;}
@@ -265,11 +253,11 @@ $colorVariant:light;
 	  width: auto;
   	}
   ul.beer-info .beer-price{
-		  float: none;
-		  display: inline-block;
-		  text-align: left;
-		  width: 100%;
-	  	}
+	  float: none;
+	  display: inline-block;
+	  text-align: left;
+	  width: 100%;
+  	}
   .image-wrapper{
 	  width: 100%;
 	  padding-bottom: 100%;
@@ -278,31 +266,11 @@ $colorVariant:light;
     max-width: 100%;
     width: auto;
     }
-  .webkite-title-area, .webkite-branding-area, .webkite-pagination-area{
-    text-align: center;
-    }
-  .webkite-branding-area{
-    padding-bottom: $mainGutter; 
-    }
-  .webkite-results-footer{
-    height: 2.813em*2+$mainGutter;
-    }
   }//end xs
   
 #webkite-results.sm{
-.webkite-block, .webkite-filter-area, .webkite-sort-area, .webkite-sort-area > .webkite-toggle{
+  .webkite-block{
     width: 100%;
-    }
-  .webkite-sort-area > .webkite-toggle i{
-    float: right; margin-top: $mainGutter/4;
-    }
-  .sort-menu{width: 95%;}
-  .webkite-sort-area+.webkite-filter-area{
-    margin-top: $mainGutter;
-    }
-  .webkite-filter-area{
-    margin-left: 0;
-    padding-left: 0;
     }
   .webkite-block ul li{
     b, a, span{width: 100%;}
@@ -322,11 +290,11 @@ $colorVariant:light;
 	  width: auto;
   	}
   ul.beer-info .beer-price{
-		  float: none;
-		  display: inline-block;
-		  text-align: left;
-		  width: 100%;
-	  	}
+	  float: none;
+	  display: inline-block;
+	  text-align: left;
+	  width: 100%;
+  	}
     
   }//end sm
   
