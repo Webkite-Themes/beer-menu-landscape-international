@@ -42,10 +42,10 @@ $colorVariant:light;
     margin-bottom: $mainGutter/4;
     }
   h3{
-	  font: 400 normal .875em/1 "Podkova";
-	  color: $lightOpacity;
-	  margin-bottom: $mainGutter/4;
-  	}
+    font: 400 normal .875em/1 "Podkova";
+    color: $lightOpacity;
+    margin-bottom: $mainGutter/4;
+    }
   p, li{
     color: $lightOpacity;
     }
@@ -88,46 +88,46 @@ $colorVariant:light;
   
 /************************************ LANDSCAPE RESULTS */
 #webkite-results{
-	
-	ul.beer-info{
-		display: inline-block;
-		margin-bottom: $mainGutter/2;
-		width: 100%;
-		text-align: left;
-		li{
-			font-size: .875em;
-			text-align: left;
-			}
-		.beer-price, .abv{
-		  font: 700 1em/1 "Podkova";
-		  color: $lightOpacity;
-		  text-align: right;
-	  	}
-	  .beer-price{
-		  float: right;
-	  	}
-	  .abv-per{
-		  font: 400 1em/1 "Open Sans";
-	  	}
-		}
-	.image-wrapper{
-			@include roundedUp(0.188em);
-			background-position: center center;
-			background-size: cover;
-			float: right;
-			padding-bottom: 27%;
-    	width: 27%;
-    	}
+  
+  ul.beer-info{
+    display: inline-block;
+    margin-bottom: $mainGutter/2;
+    width: 100%;
+    text-align: left;
+    li{
+      font-size: .875em;
+      text-align: left;
+      }
+    .beer-price, .abv{
+      font: 700 1em/1 "Podkova";
+      color: $lightOpacity;
+      text-align: right;
+      }
+    .beer-price{
+      float: right;
+      }
+    .abv-per{
+      font: 400 1em/1 "Open Sans";
+      }
+    }
+  .image-wrapper{
+      @include roundedUp(0.188em);
+      background-position: center center;
+      background-size: cover;
+      float: right;
+      padding-bottom: 27%;
+      width: 27%;
+      }
   .image-wrapper + .beer-info{
-	  width: 70%;
-  	}
+    width: 70%;
+    }
   .providence{
-	  font-size: .875em;
-	  margin-bottom: $mainGutter/2;
-	  .city + .state::before{content: ", "; color: $medOpacity;}
+    font-size: .875em;
+    margin-bottom: $mainGutter/2;
+    .city + .state::before{content: ", "; color: $medOpacity;}
     .city + .country::before{content: ", ";}
     .state + .country::before{content: ", ";}
-  	}
+    }
   .webkite-result{
     text-align: justify;
     position: relative;
@@ -250,18 +250,18 @@ $colorVariant:light;
     .webkite-toggle{width: auto;}
     }
   .image-wrapper + .beer-info{
-	  width: auto;
-  	}
+    width: auto;
+    }
   ul.beer-info .beer-price{
-	  float: none;
-	  display: inline-block;
-	  text-align: left;
-	  width: 100%;
-  	}
+    float: none;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    }
   .image-wrapper{
-	  width: 100%;
-	  padding-bottom: 100%;
-  	}
+    width: 100%;
+    padding-bottom: 100%;
+    }
   .webkite-block .inline-filter-menu li a{
     max-width: 100%;
     width: auto;
@@ -277,24 +277,24 @@ $colorVariant:light;
     .webkite-toggle{width: auto;}
     }
   .webkite-big-block{
-  	display: inline-block;
-  	vertical-align: top;
-	  &.sixty{width: 59%;}
-	  &.forty{width: 39%;}
-  	}
+    display: inline-block;
+    vertical-align: top;
+    &.sixty{width: 59%;}
+    &.forty{width: 39%;}
+    }
   .image-wrapper{
-	  padding-bottom: 39%;
-	  float: none;
-  	}
+    padding-bottom: 39%;
+    float: none;
+    }
   .image-wrapper + .beer-info{
-	  width: auto;
-  	}
+    width: auto;
+    }
   ul.beer-info .beer-price{
-	  float: none;
-	  display: inline-block;
-	  text-align: left;
-	  width: 100%;
-  	}
+    float: none;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    }
     
   }//end sm
   
