@@ -574,7 +574,12 @@
     color: rgba(0, 0, 0, 0.6);
     text-align: right; }
   #webkite-results ul.beer-info .beer-price {
-    float: right; }
+    float: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-bottom: 3px;
+    margin-bottom: -3px; }
   #webkite-results ul.beer-info .abv-per {
     font: 400 1em/1 "Open Sans"; }
 #webkite-results .image-wrapper {

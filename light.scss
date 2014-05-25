@@ -105,6 +105,11 @@ $colorVariant:light;
       }
     .beer-price{
       float: right;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+      padding-bottom:3px;
+      margin-bottom:-3px;
       }
     .abv-per{
       font: 400 1em/1 "Open Sans";
