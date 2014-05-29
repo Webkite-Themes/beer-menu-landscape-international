@@ -97,6 +97,7 @@ $colorVariant:light;
     li{
       font-size: .875em;
       text-align: left;
+      clear:both;
       }
     .beer-price, .abv{
       font: 700 1em/1 "Podkova";
@@ -110,6 +111,7 @@ $colorVariant:light;
       white-space:nowrap;
       padding-bottom:3px;
       margin-bottom:-3px;
+      max-width:100%;
       }
     .abv-per{
       font: 400 1em/1 "Open Sans";

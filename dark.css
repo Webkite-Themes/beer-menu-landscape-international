@@ -568,7 +568,8 @@
   text-align: left; }
   #webkite-results ul.beer-info li {
     font-size: 0.875em;
-    text-align: left; }
+    text-align: left;
+    clear: both; }
   #webkite-results ul.beer-info .beer-price, #webkite-results ul.beer-info .abv {
     font: 700 1em/1 "Podkova";
     color: rgba(255, 255, 255, 0.7);
@@ -579,7 +580,8 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     padding-bottom: 3px;
-    margin-bottom: -3px; }
+    margin-bottom: -3px;
+    max-width: 100%; }
   #webkite-results ul.beer-info .abv-per {
     font: 400 1em/1 "Open Sans"; }
 #webkite-results .image-wrapper {
