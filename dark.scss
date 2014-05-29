@@ -257,7 +257,7 @@ $colorVariant:dark;
     .webkite-toggle{width: auto;}
     }
   .image-wrapper + .beer-info{
-    width: auto;
+    width: 100%;
     }
   ul.beer-info .beer-price{
     float: none;
@@ -294,7 +294,8 @@ $colorVariant:dark;
     float: none;
     }
   .image-wrapper + .beer-info{
-    width: auto;
+    width: 100%;
+    padding-right:$mainGutter;
     }
   ul.beer-info .beer-price{
     float: none;

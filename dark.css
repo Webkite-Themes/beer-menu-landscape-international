@@ -734,7 +734,7 @@
 #webkite-results.xs .webkite-block ul li .webkite-toggle {
   width: auto; }
 #webkite-results.xs .image-wrapper + .beer-info {
-  width: auto; }
+  width: 100%; }
 #webkite-results.xs ul.beer-info .beer-price {
   float: none;
   display: inline-block;
@@ -764,7 +764,8 @@
   padding-bottom: 39%;
   float: none; }
 #webkite-results.sm .image-wrapper + .beer-info {
-  width: auto; }
+  width: 100%;
+  padding-right: 20px; }
 #webkite-results.sm ul.beer-info .beer-price {
   float: none;
   display: inline-block;
