@@ -764,6 +764,9 @@
   padding-bottom: 39%;
   float: none; }
 #webkite-results.sm .image-wrapper + .beer-info {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   padding-right: 20px; }
 #webkite-results.sm ul.beer-info .beer-price {

@@ -294,6 +294,7 @@ $colorVariant:dark;
     float: none;
     }
   .image-wrapper + .beer-info{
+    @include boxedUp;
     width: 100%;
     padding-right:$mainGutter;
     }
