@@ -1,6 +1,6 @@
 {{ log this}}
 <header class="webkite-results-header">
-  {{>sorts this.sort}}
+  {{>sorts this.sort~}}
   {{>filters this.filters}}
 </header>
 
@@ -96,7 +96,7 @@
 			{{#facet name="Image URL"}}<div class="image-wrapper until-sm" style="background-image:url({{displayValue}});"></div>{{/facet}}	
 			<ul class="beer-info">
 				{{#facet name="Beer Name"}}<h2 class="beer-name">{{displayValue}}</h2>{{/facet}}
-				{{#facet name="Price"}}<span class="beer-price">{{displayValue}}</span>{{/facet}}
+				{{#facet name="Price"}}<span class="beer-price" title="{{displayValue}}">{{displayValue}}</span>{{/facet}}
 				<li>
 					{{#facet name="Description"}}<p>{{displayValue}}</p>{{/facet}}
 				</li>
@@ -114,7 +114,6 @@
 <section class="webkite-no-results">
   <h2>Sorry, no results</h2>
   <p>There are no results to display based on the selected filters. Try removing a filter to see more results.</p>
-  <footer class="webkite-result-footer"></footer>
 </section>
 {{/if}}
 
